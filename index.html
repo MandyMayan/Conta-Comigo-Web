@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <section id="start-screen" class="screen active">
+            <h1>Conta Comigo!</h1>
+            <p class="description">Escolha o nível de dificuldade para começar a jogar:</p>
+            
+            <div class="difficulty-buttons">
+                <button class="btn btn-difficulty" onclick="startGame('facil')">
+                    <span>Fácil</span>
+                    <small>30 segundos por pergunta</small>
+                </button>
+                <button class="btn btn-difficulty" onclick="startGame('medio')">
+                    <span>Médio</span>
+                    <small>20 segundos por pergunta</small>
+                </button>
+                <button class="btn btn-difficulty" onclick="startGame('dificil')">
+                    <span>Difícil</span>
+                    <small>10 segundos por pergunta</small>
+                </button>
+            </div>
+        </section>
+
+        <section id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="header-item">
+                    <span class="label">Pontuação:</span>
+                    <span id="score-display" class="value">0</span>
+                </div>
+                <div class="header-item">
+                    <span class="label">Tempo:</span>
+                    <span id="timer-display" class="value">30s</span>
+                </div>
+            </div>
+
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">Texto da pergunta aqui...</h2>
+                <div id="options-container" class="options-grid">
+                    </div>
+            </div>
+
+            <div id="feedback-message" class="feedback"></div>
+
+            <button id="next-btn" class="btn btn-primary hidden" onclick="nextQuestion()">Próxima Pergunta</button>
+        </section>
+
+        <section id="end-screen" class="screen">
+            <h1 id="result-title">Fim de Jogo!</h1>
+            <div id="result-icon" class="result-icon"></div>
+            <p id="result-message">Você concluiu o quiz.</p>
+            <p class="final-score-text">Pontuação final: <strong id="final-score">0</strong></p>
+            
+            <button class="btn btn-primary" onclick="restartGame()">Jogar Novamente</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
