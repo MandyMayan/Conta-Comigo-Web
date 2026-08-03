@@ -19,20 +19,85 @@ const perguntas = {
             correta: 3
         },
         {
-            pergunta: "Qual é a cor resultante da mistura de azul com amarelo?",
-            alternativas: ["Verde", "Roxo", "Laranja", "Marrom"],
-            correta: 0
-        },
-        {
-            pergunta: "Qual  o maior planeta do Sistema Solar?",
-            alternativas: ["Terra", "Marte", "Saturno", "JÃºpiter"],
+            pergunta: "Qual desses locais não é uma atração turística da região de Mata de São João, na Bahia?",
+            alternativas: ["Projeto Tamar", "Castelo Garcia D’Ávila", "Reserva da Sapiranga", "Cachoeira da Fumaça"],
             correta: 3
         },
-        {
-            pergunta: "Qual animal é conhecido como o 'Rei da Selva'?",
-            alternativas: ["Tigre", "LeÃ£o", "Elefante", "Uso"],
+{
+            pergunta: "Qual desses compositores nasceu no estado da Bahia?",
+            alternativas: ["Luiz Gonzaga", "Alceu Valença", "Claudia Leitte", "Pitty"],
+            correta: 3
+        },
+{
+            pergunta: "Quem é o escritor cuja obra se notabilizou por expressar a linguagem do povo?",
+            alternativas: ["Machado de Assis", "José de Alencar", "Graciliano Ramos", "Jorge Amado"],
+            correta: 3
+        },
+{
+            pergunta: "Bolinho da culinária baiana feito de feijão fradinho e frito no azeite de dendê:",
+            alternativas: ["Abará", "Bolinho de estudante", "Cocada", "Acarajé"],
+            correta: 3
+        },
+{
+            pergunta: "Qual é o(a) padroeiro(a) da cidade de Salvador/BA?",
+            alternativas: ["Santo Antônio", "São Francisco Xavier", "Nossa Senhora da Conceição da Praia", "Senhor do Bonfim"],
             correta: 1
-        }
+        },
+{
+            pergunta: "Qual dessas frutas não é nativa do Brasil?",
+            alternativas: ["Caju", "Jabuticaba", "Manga", "Goiaba"],
+            correta: 2
+        },
+{
+            pergunta: "Considerado o pai da psiquiatria no Brasil, revolucionou o tratamento das doenças mentais:",
+            alternativas: ["Paulo Amarante", "Milton Santos", "Juliano Moreira", "Luiz Gama"],
+            correta: 2
+        },
+{
+            pergunta: "Animal híbrido e estéril, muito utilizado para transporte de cargas e montaria. Seu nome é dito de forma pejorativa:",
+            alternativas: ["Anta", "Cavalo", "Errada 2", "Errada 3"],
+            correta: 0
+        },
+{
+            pergunta: "Geógrafo baiano, foi um dos grandes nomes da renovação da geografia no Brasil:",
+            alternativas: ["Milton Nascimento", "Camafeu de Oxóssi", "Milton Santos", "Juarez Paraíso"],
+            correta: 2
+        },
+{
+            pergunta: "Nasceu na Ilha de Itaparica, liderou um grupo de 200 pessoas na batalha contra os portugueses e inspirou a criação do termo “surra de cansanção”:",
+            alternativas: ["Maria Quitéria", "Maria Felipa", "Joana Angélica", "Chica da Silva"],
+            correta: 1
+        },
+{
+            pergunta: "Quais desses pratos são típicos da culinária baiana, considerados como “comida de terreiro” e oferecidos aos orixás?",
+            alternativas: ["Maniçoba, bolinho de estudante e cuscuz", "Vatapá, caruru e acarajé", "Moqueca, peixe vermelho e feijoada", "Xinxim, beiju e acaçá"],
+            correta: 1
+        },
+{
+            pergunta: "Qual dessas criaturas do folclore brasileiro é conhecida por virar as embarcações dos pescadores do rio São Francisco?",
+            alternativas: ["Papa-Figo", "Caipora", "Yara", "Nego D’Água"],
+            correta: 3
+        },
+{
+            pergunta: "Qual o significado da expressão “Pensar na morte da bezerra”?",
+            alternativas: ["Morte", "Perigo", "Teimosia", "Falta de atenção"],
+            correta: 3
+        },
+{
+            pergunta: "Na obra “Vidas Secas”, de Graciliano Ramos, que animal representa a personagem “Baleia”?",
+            alternativas: ["Papagaio", "Baleia", "Cachorro", "Preá"],
+            correta: 2
+        },
+{
+            pergunta: "Qual o significado da expressão nordestina “Cabra da Peste”?",
+            alternativas: ["Pessoa medrosa", "Pessoa valente", "Pessoa irritante", "Pessoa doente"],
+            correta: 1
+        },
+{
+            pergunta: "Qual destes santos ou santa é brasileiro e nascido no estado da Bahia?",
+            alternativas: ["São Félix", "Santo Antônio de Jesus", "São Jorge", "Santa Dulce dos Pobres"],
+            correta: 3
+        },
     ],
     medio: [
         {
@@ -59,7 +124,72 @@ const perguntas = {
             pergunta: "Qual desses órgãos pode ser considerado o antecessor dos Tribunais de Contas do Brasil?",
             alternativas: ["Diretoria de Documentação Histórica", "Casa de Arrecadação dos Direitos", "Conselho da Fazenda", "Casa da Moeda"],
             correta: 2
+        }{
+            pergunta: "Qual é a cidade natal da heroína baiana Maria Quitéria?",
+            alternativas: ["Xique-Xique", "Feira de Santana", "Itaparica", "Salvador"],
+            correta: 1
+        },
+{
+            pergunta: "O Banco do Brasil e a Caixa Econômica Federal são:",
+            alternativas: ["Autarquias federais", "Fundações públicas", "Órgãos públicos", "Empresas estatais"],
+            correta: 3
+        },
+{
+            pergunta: "Quem foi o responsável pela proposta que deu origem ao Tribunal de Contas da União (TCU)?",
+            alternativas: ["Anísio Teixeira", "Marquês de Pombal", "Visconde de Cairu", "Ruy Barbosa"],
+            correta: 3
+        },
+{
+            pergunta: "Qual a idade máxima para que crianças tenham acesso a creches e pré-escolas?",
+            alternativas: ["6 anos", "5 anos", "4 anos", "12 anos"],
+            correta: 1
+        },
+{
+            pergunta: "Qual é o percentual mínimo da receita dos impostos que a Constituição Federal previu para ser aplicado na educação pelos estados e municípios?",
+            alternativas: ["12%", "15%", "18%", "25%"],
+            correta: 3
+        },
+{
+            pergunta: "Qual dos títulos a seguir não faz parte da obra do escritor baiano Jorge Amado?",
+            alternativas: ["Tocaia Grande", "Capitães da Areia", "Corpo Vivo", "Terras do Sem Fim"],
+            correta: 2
+        },
+{
+            pergunta: "Quem é conhecido como “O Poeta dos Escravos” e fez parte da geração do Romantismo?",
+            alternativas: ["Tobias Barreto", "Castro Alves", "Gonçalves Dias", "Cassiano Ricardo"],
+            correta: 1
+        },
+{
+            pergunta: "Cantor e compositor, foi ministro da Cultura:",
+            alternativas: ["Caetano Veloso", "Chico Buarque", "Gilberto Gil", "Moraes Moreira"],
+            correta: 2
+        },
+{
+            pergunta: "Grande pensador da educação, criou o modelo da Escola Parque:",
+            alternativas: ["Paulo Freire", "Anísio Teixeira", "Darcy Ribeiro", "Rubem Alves"],
+            correta: 1
+        },
+{
+            pergunta: "Quem é o autor baiano que escreveu várias novelas de sucesso na TV brasileira?",
+            alternativas: ["Adonias Filho", "Dias Gomes", "João Ubaldo Ribeiro", "Jorge Amado"],
+            correta: 1
+        },
+{
+            pergunta: "Escritor baiano, foi membro da Academia Brasileira de Letras. Escreveu “Viva o Povo Brasileiro”:",
+            alternativas: ["João Ubaldo Ribeiro", "Jorge Amado", "Graciliano Ramos", "Ariano Suassuna"],
+            correta: 0
+        },
+{
+            pergunta: "Quem é o Patrono dos Tribunais de Contas do Brasil?",
+            alternativas: ["Marechal Deodoro da Fonseca", "Ruy Barbosa", "Errada 2", "Errada 3"],
+            correta: 1
+        },
+{
+            pergunta: "Qual o ano de inauguração do Centro Administrativo da Bahia (CAB)?",
+            alternativas: ["1980", "1950", "1978", "1972"],
+            correta: 3
         }
+
     ],
     dificil: [
         {
@@ -93,10 +223,35 @@ const perguntas = {
             correta: 0
         },
 		{
-            pergunta: "Base Pergunta Hard",
-            alternativas: ["Correta", "Errada 1", "Errada 2", "Errada 3"],
+            pergunta: "As Normas de Auditoria Governamental (NAGs) aplicáveis ao controle externo brasileiro foram construídas com base:",
+            alternativas: ["em práticas internacionais", "em práticas exclusivamente nacionais", "em práticas de auditoria privada", "na jurisprudência do TCU"],
             correta: 0
         },
+{
+            pergunta: "Quem foi o paraense responsável por implantar o Tribunal de Contas da União (TCU) quando ocupou o cargo de Ministro da Fazenda de 1892 a 1893?",
+            alternativas: ["Serzedello Corrêa", "Ruy Barbosa", "Floriano Peixoto", "Alberto Engelhard"],
+            correta: 0
+        },
+{
+            pergunta: "Em que documento se materializam as diretrizes, metas e estratégias que devem reger as iniciativas na área da Educação?",
+            alternativas: ["Plano Plurianual (PPA)", "Lei de Diretrizes Orçamentárias (LDO)", "Plano Nacional de Educação (PNE)", "Plano Estratégico para Educação e Cultura (PEEC)"],
+            correta: 2
+        },
+{
+            pergunta: "Como são conhecidas as unidades de Educação Corporativa no âmbito dos Tribunais de Contas?",
+            alternativas: ["Escolas de Governo", "Escolas de Contas", "Escolas de Auditoria Pública", "Escolas Governamentais"],
+            correta: 1
+        },
+{
+            pergunta: "Qual das alternativas a seguir consta de uma cláusula pétrea prevista na Constituição Federal de 1988 (CF/88)?",
+            alternativas: ["forma republicana", "voto direto, secreto, periódico e universal", "sistema presidencialista", "direitos e garantias coletivas"],
+            correta: 1
+        },
+{
+            pergunta: "Qual a idade mínima para se tornar Conselheiro dos Tribunais de Contas?",
+            alternativas: ["30 anos­", "35 anos", "40 anos", "45 anos"],
+            correta: 1
+        }
     ]
 };
 
