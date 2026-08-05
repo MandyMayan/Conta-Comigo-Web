@@ -118,7 +118,7 @@ const perguntas = {
 {
             pergunta: "Quais desses pratos são típicos da culinária baiana, considerados como “comida de terreiro” e oferecidos aos orixás?",
             alternativas: ["Maniçoba, bolinho de estudante e cuscuz", "Vatapá, caruru e acarajé", "Moqueca, peixe vermelho e feijoada", "Xinxim, beiju e acaçá"],
-            correta: 1 , dica: "Debug <a>https://www.tce.ba.gov.br/</a>"
+            correta: 1, dica: 'Consulte o material de apoio clicando <a href="https://www.tce.ba.gov.br" target="_blank" rel="noopener noreferrer">aqui</a>.'
 	
         },
 {
