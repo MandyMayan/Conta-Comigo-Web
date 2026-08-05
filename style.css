@@ -1,3 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
 /* RESET E CONFIGURAÇÕES BÁSICAS */
 * {
     margin: 0;
@@ -7,13 +9,13 @@
 }
 
 :root {
-    --bg-gradient: linear-gradient(135deg, #0f172a, #1e1b4b, #311042);
+    --bg-gradient: linear-gradient(135deg, #00afd3, #0069a9,#1a2d4d);
     --card-bg: rgba(255, 255, 255, 0.07);
     --card-border: rgba(255, 255, 255, 0.15);
     --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent-purple: #8b5cf6;
-    --accent-hover: #7c3aed;
+    --text-secondary: #ffffff;
+    --accent-purple: #032B50;
+    --accent-hover: ##0069A9;
     --correct-color: #22c55e;
     --incorrect-color: #ef4444;
     --warning-color: #f59e0b;
@@ -64,11 +66,20 @@ body {
 
 /* TYPOGRAPHY */
 h1 {
+	
     font-size: 2.2rem;
     margin-bottom: 12px;
-    background: linear-gradient(to right, #a78bfa, #f472b6);
+    background: linear-gradient(to right, #ffffff, #F7F4EB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+/* ESTILO DA LOGO DO JOGO */
+.logo-jogo {
+    width: 100%;
+    max-width: 300px; /* Controla o tamanho máximo que a imagem pode atingir */
+    height: auto;
+    margin-bottom: 20px; /* Adiciona um respiro entre a logo e o parágrafo abaixo */
+    display: block;
 }
 
 .description {
@@ -89,7 +100,7 @@ h1 {
 
 .btn-primary {
     background: var(--accent-purple);
-    color: #fff;
+    color: #ffffff;
     padding: 14px 28px;
     font-size: 1rem;
     margin-top: 20px;
@@ -164,6 +175,15 @@ h1 {
     margin-bottom: 24px;
 }
 
+.version-tag {
+    margin-top: 20px;   /* Empurra o texto para a parte inferior da caixa */
+    align-self: center; /* Centraliza o texto no meio horizontal da caixa */
+    font-size: 11px;
+    color: var(--text-secondary, #94a3b8);
+    opacity: 0.3;
+    pointer-events: none;
+}
+
 .progress-bar {
     height: 100%;
     width: 0%;
@@ -182,6 +202,46 @@ h1 {
     margin-bottom: 24px;
     line-height: 1.4;
     text-align: left;
+}
+
+/* ESTILOS DE DICA */
+.btn-hint {
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid var(--warning-color);
+    color: #fcd34d;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-hint:hover {
+    background: rgba(245, 158, 11, 0.3);
+}
+
+.hint-box {
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 4px solid var(--warning-color);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #fef08a;
+    animation: fadeIn 0.3s ease;
+}
+
+.hint-box a {
+    color: #60a5fa;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.hint-box a:hover {
+    color: #93c5fd;
 }
 
 /* ALTERNATIVAS */
@@ -213,7 +273,7 @@ h1 {
     cursor: not-allowed;
 }
 
-/* ESTADOS DAS ALTERNATIVAS (CORRETA / INCORRETA) */
+/* ESTADOS DAS ALTERNATIVAS */
 .option-btn.correct {
     background: rgba(34, 197, 94, 0.2) !important;
     border-color: var(--correct-color) !important;
