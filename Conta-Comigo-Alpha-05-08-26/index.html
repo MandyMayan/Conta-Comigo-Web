@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Conta Comigo!</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- TELA INICIAL / SELEÇÃO DE DIFICULDADE -->
+        <section id="start-screen" class="screen active">
+            <img src="contacomigo.png" alt="Logo Conta Comigo Digital" class="logo-jogo">
+<p class="description">Escolha o nível de dificuldade para começar a jogar:</p>
+            
+            <div class="difficulty-buttons">
+                <button class="btn btn-difficulty" onclick="startGame('facil')">
+                    <span>Fácil</span>
+                    <small>30 segundos por pergunta</small>
+                </button>
+                <button class="btn btn-difficulty" onclick="startGame('medio')">
+                    <span>Médio</span>
+                    <small>25 segundos por pergunta</small>
+                </button>
+                <button class="btn btn-difficulty" onclick="startGame('dificil')">
+                    <span>Difícil</span>
+                    <small>20 segundos por pergunta</small>
+                </button>
+            </div>
+        </section>
+
+        <!-- TELA DO QUIZ -->
+        <section id="quiz-screen" class="screen">
+            <!-- Cabeçalho do Quiz (Barra de progresso, Score, Temporizador) -->
+            <div class="quiz-header">
+                <div class="header-item">
+                    <span class="label">Pontuação:</span>
+                    <span id="score-display" class="value">0</span>
+                </div>
+                <div class="header-item">
+                    <span class="label">Tempo:</span>
+                    <span id="timer-display" class="value">30s</span>
+                </div>
+            </div>
+
+            <!-- Barra de Progresso -->
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+
+            <!-- Conteúdo da Pergunta -->
+            <div class="question-container">
+                <h2 id="question-text">Texto da pergunta aqui...</h2>
+
+                <!-- Botão de Dica -->
+                <button id="hint-btn" class="btn btn-hint hidden" onclick="toggleHint()">💡 Ver Dica</button>
+
+                <!-- Painel da Dica -->
+                <div id="hint-box" class="hint-box hidden"></div>
+
+                <div id="options-container" class="options-grid">
+                    <!-- Botões gerados via JS -->
+                </div>
+            </div>
+
+            <!-- Mensagem de Feedback -->
+            <div id="feedback-message" class="feedback"></div>
+
+            <!-- Botão Próxima Pergunta -->
+            <button id="next-btn" class="btn btn-primary hidden" onclick="nextQuestion()">Próxima Pergunta</button>
+        </section>
+
+        <!-- TELA FINAL / RESULTADOS -->
+        <section id="end-screen" class="screen">
+            <h1 id="result-title">Fim de Jogo!</h1>
+            <div id="result-icon" class="result-icon"></div>
+            <p id="result-message">Você concluiu o quiz.</p>
+            <p class="final-score-text">Pontuação final: <strong id="final-score">0</strong></p>
+            
+            <button class="btn btn-primary" onclick="restartGame()">Jogar Novamente</button>
+        </section>
+		<div class="version-tag">Versão Alpha 05.08.26 , TCE/BA</div>
+    </div>
+<audio id="musica-fundo" src="musica-template.mp3" loop></audio>
+   
+    <script src="script.js"></script>
+</body>
+</html>
