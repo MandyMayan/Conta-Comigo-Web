@@ -14,6 +14,7 @@ musicaFundo.volume = 0.3;
 // Carregamento dos efeitos sonoros
 const somAcerto = new Audio('x.mpeg');
 const somErro = new Audio('y.mpeg');
+const somDica = new Audio('z.mpeg');
 
 /**
  * Função utilitária para reproduzir o som do iní­cio
@@ -289,12 +290,12 @@ const perguntas = {
 		{
             pergunta: "Primeiro(a) engenheiro(a) negro(a) a se formar na Escola Militar do Rio de Janeiro, nascido(a) na cidade de Cachoeira/BA. Idealizou e projetou a ferrovia Curitiba/Paranaguá:",
             alternativas: ["Enedina Alves Marques", "Antônio Joaquim de Souza", "Teodoro Sampaio", "André Rebouças"],
-            correta: 3
+            correta: 3 , dica: 'Durante a Guerra do Paraguai, desenvolveu um torpedo que foi utilizado com sucesso!'
         },
 {
             pergunta: "Na obra literária “O Homem que Sabia Javanês”, de Lima Barreto, qual a cidade natal do personagem Castelo?",
             alternativas: ["Canavieiras", "Tucano", "Salvador", "Castro Alves"],
-            correta: 0
+            correta: 0 , dica: 'Ao contrário do que o seu nome sugere, por muitos anos sua economia prosperou com o cultivo de cacau!'
         },
 {
             pergunta: "Em qual ano o Tribunal de Contas do Estado da Bahia foi extinto pela ditadura do Estado Novo?",
@@ -511,7 +512,10 @@ function toggleHint() {
     
     if (!perguntaAtual || !perguntaAtual.dica) return;
 
-    if (hintBox.classList.contains('hidden')) {
+    const estaOculta = hintBox.classList.contains('hidden');
+
+    if (estaOculta) {
+        tocarSom(somDica);
         hintBox.innerHTML = perguntaAtual.dica;
         hintBox.classList.remove('hidden');
     } else {
