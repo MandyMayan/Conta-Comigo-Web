@@ -1,7 +1,7 @@
 // JavaScript Document/* ===================================================
-  // CONFIGURAÃ‡Ã•ES GERAIS E EFEITOS SONOROS
+  // CONFIGS GERAIS E EFEITOS SONOROS
  //  =================================================== */
-// PontuaÃ§Ã£o minima necessÃ¡ria para vencer o jogo
+// Pontuao minima necessária para vencer o jogo
 
 const PONTOS_PARA_VENCER = 5;
 
@@ -16,12 +16,12 @@ const somAcerto = new Audio('x.mpeg');
 const somErro = new Audio('y.mpeg');
 
 /**
- * FunÃ§Ã£o utilitÃ¡ria para reproduzir o som do inÃ­cio
+ * Função utilitária para reproduzir o som do iní­cio
  */
 function tocarSom(audio) {
-    audio.currentTime = 0; // Reinicia o Ã¡udio se for clicado rapidamente
+    audio.currentTime = 0; // Reinicia o áudio se for clicado rapidamente
     audio.play().catch(err => {
-        // Trata restriÃ§Ãµes de reproduÃ§Ã£o automÃ¡tica do navegador caso ocorram
+        // Trata restriçõees de reprodução automática do navegador caso ocorram
         console.warn("Não foi possível reproduzir o áudio, desculpa", err);
     });
 }
@@ -38,7 +38,8 @@ const perguntas = {
 		{
             pergunta: "Qual desses consagrados compositores brasileiros morou muitos anos em Salvador?",
             alternativas: ["Tom Jobim", "Toquinho", "Vinicius de Moraes", "Chico Buarque"],
-            correta: 2
+            correta: 2 ,
+            dica: 'Foi o autor do sucesso da MPB "Tarde em Itapuã"'
         },
 		{
             pergunta: "Qual instituição é conhecida como a “Casa do Conhecimento dos Tribunais de Contas”?",
@@ -80,7 +81,8 @@ const perguntas = {
 {
             pergunta: "Bolinho da culinária baiana feito de feijão fradinho e frito no azeite de dendê:",
             alternativas: ["Abará", "Bolinho de estudante", "Cocada", "Acarajé"],
-            correta: 3
+            correta: 3 ,
+            dica: 'Este prato típico foi trazido para o Brasil pelos povos Iorubás da Nigéria e do Benim'
         },
 {
             pergunta: "Qual é o(a) padroeiro(a) da cidade de Salvador/BA?",
@@ -118,13 +120,14 @@ const perguntas = {
 {
             pergunta: "Quais desses pratos são típicos da culinária baiana, considerados como “comida de terreiro” e oferecidos aos orixás?",
             alternativas: ["Maniçoba, bolinho de estudante e cuscuz", "Vatapá, caruru e acarajé", "Moqueca, peixe vermelho e feijoada", "Xinxim, beiju e acaçá"],
-            correta: 1, dica: 'Consulte o material de apoio clicando <a href="https://www.tce.ba.gov.br" target="_blank" rel="noopener noreferrer">aqui</a>.'
+            correta: 1
 	
         },
 {
             pergunta: "Qual dessas criaturas do folclore brasileiro é conhecida por virar as embarcações dos pescadores do rio São Francisco?",
             alternativas: ["Papa-Figo", "Caipora", "Yara", "Nego D’Água"],
-            correta: 3
+            correta: 3 , 
+            dica: 'Segundo sua lenda, ele(a) pode ser evitado com oferendas de peixes ou derramando cachaça antes de uma pescaria.'
         },
 {
             pergunta: "Qual o significado da expressão “Pensar na morte da bezerra”?",
@@ -164,12 +167,12 @@ const perguntas = {
 {
             pergunta: "Cantor baiano, considerado pai do rock brasileiro, famoso por suas músicas contestadoras, com referências místicas:",
             alternativas: ["Tom Zé", "Cazuza", "Raul Seixas", "Marcelo Nova"],
-            correta: 2
+            correta: 2 , dica: 'Também foi conhecido por seu apelido de "Maluco Beleza".'
         },
 {
             pergunta: "Qual a sigla da universidade baiana considerada a primeira do Brasil, fundada por Dom João VI em 1808?",
             alternativas: ["UNEB", "UFBA", "UCSAL", "UEFS"],
-            correta: 1
+            correta: 1 , dica: 'Foi fundada como a Escola de Cirurgia da Bahia'
         },
 {
             pergunta: "Como o cidadão pode fazer uma denúncia de irregularidade ao TCE/BA?",
@@ -204,7 +207,7 @@ const perguntas = {
             correta: 0
         },
         {
-            pergunta: "Qual dessas atribuições não é da competência dos Tribunais de Contas?",
+            pergunta: "Qual dessas atribuições <strong>não</strong> é da competência dos Tribunais de Contas?",
             alternativas: ["Julgar as contas dos chefes do Poder Executivo", "Apreciar a legalidade dos atos de admissão de pessoal", "Sustar a execução de atos impugnados", "Disponibilizar à Justiça Eleitoral a relação dos gestores com contas desaprovadas para fins de inelegibilidade"],
             correta: 0
         },
@@ -420,10 +423,19 @@ const resultTitle = document.getElementById('result-title');
 const resultIcon = document.getElementById('result-icon');
 const resultMessage = document.getElementById('result-message');
 const finalScoreDisplay = document.getElementById('final-score');
+const muteBtn = document.getElementById('mute-btn');
 
 /* ===================================================
    FUNÃ‡Ã•ES DO JOGO
    =================================================== */
+
+function toggleMute() {
+    musicaFundo.muted = !musicaFundo.muted;
+    if (muteBtn) {
+        muteBtn.textContent = musicaFundo.muted ? '🔇' : '🔊';
+        muteBtn.setAttribute('aria-label', musicaFundo.muted ? 'Ativar música' : 'Silenciar música');
+    }
+}
 
 function shuffle(array) {
     const arrayCopiado = [...array];
