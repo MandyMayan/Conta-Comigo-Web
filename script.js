@@ -315,6 +315,81 @@ const perguntas = {
 
     ],
     dificil: [
+        {
+            pergunta: "Qual situação não pode ser fiscalizada pelo TCE/BA?",
+            alternativas: ["Falta de merenda nas escolas estaduais", "Falta de manutenção em estradas administradas por empresas terceirizadas", "Má qualidade da água fornecida nas cidades da Bahia", "Bullying entre alunos da escola estadual"],
+            correta: 3
+        },
+        {
+            pergunta: "Qual é a forma de Estado adotada pelo Brasil?",
+            alternativas: ["Presidencialista", "Federativa", "Parlamentarista", "Republicana"],
+            correta: 1
+        },
+        {
+            pergunta: "Qual dessas pessoas jurídicas pode se enquadrar no conceito de administração pública direta?",
+            alternativas: ["Autarquias", "Agências reguladoras", "Órgãos públicos", "Empresas públicas"],
+            correta: 2
+        },
+        {
+            pergunta: "O abuso de poder na gestão pública que ocorre quando o servidor público age sem a devida competência recebe o nome de:",
+            alternativas: ["Excesso de poder", "Desvio de Finalidade", "Falsidade ideológica", "Prevaricação"],
+            correta: 0
+        },
+        {
+            pergunta: "Qual dessas atribuições <strong>não</strong> é da competência dos Tribunais de Contas?",
+            alternativas: ["Julgar as contas dos chefes do Poder Executivo", "Apreciar a legalidade dos atos de admissão de pessoal", "Sustar a execução de atos impugnados", "Disponibilizar à Justiça Eleitoral a relação dos gestores com contas desaprovadas para fins de inelegibilidade"],
+            correta: 0
+        },
+        {
+            pergunta: "Qual desses órgãos pode ser considerado o antecessor dos Tribunais de Contas do Brasil?",
+            alternativas: ["Diretoria de Documentação Histórica", "Casa de Arrecadação dos Direitos", "Conselho da Fazenda", "Casa da Moeda"],
+            correta: 2
+        },
+		{
+            pergunta: "Qual é a cidade natal da heroína baiana Maria Quitéria?",
+            alternativas: ["Xique-Xique", "Feira de Santana", "Itaparica", "Salvador"],
+            correta: 1
+        },
+{
+            pergunta: "O Banco do Brasil e a Caixa Econômica Federal são:",
+            alternativas: ["Autarquias federais", "Fundações públicas", "Órgãos públicos", "Empresas estatais"],
+            correta: 3
+        },
+{
+            pergunta: "Quem foi o responsável pela proposta que deu origem ao Tribunal de Contas da União (TCU)?",
+            alternativas: ["Anísio Teixeira", "Marquês de Pombal", "Visconde de Cairu", "Ruy Barbosa"],
+            correta: 3
+        },
+{
+            pergunta: "Qual a idade máxima para que crianças tenham acesso a creches e pré-escolas?",
+            alternativas: ["6 anos", "5 anos", "4 anos", "12 anos"],
+            correta: 1
+        },
+{
+            pergunta: "Qual é o percentual mínimo da receita dos impostos que a Constituição Federal previu para ser aplicado na educação pelos estados e municípios?",
+            alternativas: ["12%", "15%", "18%", "25%"],
+            correta: 3
+        },
+{
+            pergunta: "Qual dos títulos a seguir não faz parte da obra do escritor baiano Jorge Amado?",
+            alternativas: ["Tocaia Grande", "Capitães da Areia", "Corpo Vivo", "Terras do Sem Fim"],
+            correta: 2
+        },
+{
+            pergunta: "Quem é conhecido como “O Poeta dos Escravos” e fez parte da geração do Romantismo?",
+            alternativas: ["Tobias Barreto", "Castro Alves", "Gonçalves Dias", "Cassiano Ricardo"],
+            correta: 1
+        },
+{
+            pergunta: "Cantor e compositor, foi ministro da Cultura:",
+            alternativas: ["Caetano Veloso", "Chico Buarque", "Gilberto Gil", "Moraes Moreira"],
+            correta: 2
+        },
+{
+            pergunta: "Grande pensador da educação, criou o modelo da Escola Parque:",
+            alternativas: ["Paulo Freire", "Anísio Teixeira", "Darcy Ribeiro", "Rubem Alves"],
+            correta: 1
+        },
 		{
             pergunta: "Quantos ministros compõem o TCU?",
             alternativas: ["7", "9", "11", "13"],
