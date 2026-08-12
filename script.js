@@ -220,7 +220,7 @@ const perguntas = {
 		{
             pergunta: "Qual é a cidade natal da heroína baiana Maria Quitéria?",
             alternativas: ["Xique-Xique", "Feira de Santana", "Itaparica", "Salvador"],
-            correta: 1
+            correta: 1 , dica: 'Fugiu da fazenda na qual morava com sua família, se difarçando como um militar, e se juntou á guerra pela independência',
         },
 {
             pergunta: "O Banco do Brasil e a Caixa Econômica Federal são:",
