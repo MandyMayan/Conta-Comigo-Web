@@ -1,6 +1,9 @@
 # Conta-Comigo-Web
 Versão Digital do Conta Comigo
 
+///ATENÇÃO: TODOS OS ARQUIVOS (script,style,index) ***DEVEM*** SER SALVOS NO FORMATO UTF-8 (caso contrário, as perguntas e o index dão erro por causa dos caracteres com acentos)///
+
+
 Glossário de arquivos:
 
 
